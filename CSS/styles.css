@@ -381,7 +381,7 @@ section {
   text-align: center;
 }
 
-.social-links {
+.teamsocial-links {
   display: inline-flex;
   padding: 0;
   margin-right: auto;
@@ -389,12 +389,12 @@ section {
   list-style: none;
 }
 
-.social-image {
+.teamsocial-image {
   margin: 0;
   padding: 0;
 }
 
-.social-image .link {
+.teamsocial-image .link {
   display: block;
   width: 44px;
   height: 44px;
@@ -402,17 +402,17 @@ section {
   margin-right: 10px;
   padding: 12px;
   color: var(--icon-color);
-  border-radius: 50%;
   background-color: var(--primary-background);
+  border-radius: 50%;
   align-items: center;
   justify-content: center;
 }
 
-.social-image .icon {
+.teamsocial-image .icon {
   fill: currentColor;
 }
 
-.social-image .link:hover {
+.teamsocial-image .link:hover {
   background-color: var(--accent-color);
   color: var(--primary-background);
 }
@@ -470,9 +470,13 @@ section {
   margin-right: auto;
   margin-left: auto;
   display: flex;
-  flex-direction: column;
   padding-top: 60px;
   padding-bottom: 60px;
+  align-items: baseline;
+}
+
+.address-info {
+  margin-right: 70px;
 }
 
 .flex-footer .logo {
@@ -507,19 +511,31 @@ section {
   font-style: normal;
 }
 
-.social.container {
-  /* display: flex; */
-}
-
 .join {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
   color: var(--primary-background);
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
-.footer.link {
+.joinsocial-links {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.joinsocial-image {
+  margin: 0;
+  padding: 0;
+}
+
+.joinsocial-image .link {
   display: block;
   width: 44px;
   height: 44px;
@@ -529,16 +545,15 @@ section {
   color: var(--primary-background);
   background-color: var(--icon-footer);
   border-radius: 50%;
-
   align-items: center;
   justify-content: center;
 }
 
-.footer .icon {
+.joinsocial-image .icon {
   fill: currentColor;
 }
 
-.footer.link:hover {
+.joinsocial-image .link:hover {
   background-color: var(--accent-color);
   color: var(--primary-background);
 }
