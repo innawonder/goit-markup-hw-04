@@ -167,6 +167,8 @@ body {
 }
 
 .contacts a {
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--secondary-text-color);
@@ -197,7 +199,7 @@ body {
 }
 
 .hero.background {
-  width: 1600px;
+  max-width: 1600px;
   height: 600px;
   margin: auto;
   background-image: linear-gradient(
@@ -264,13 +266,14 @@ section {
 }
 
 .feature-image {
-  display: block;
+  display: flex;
   margin: 0;
   margin-bottom: 30px;
   background-color: var(--team-background);
   width: 270px;
   height: 120px;
-  padding: 25px 100px;
+  align-items: center;
+  justify-content: center;
 }
 .feature-title {
   margin: 0;
@@ -391,16 +394,19 @@ section {
 
 .teamsocial-image {
   margin: 0;
+  margin-right: 10px;
   padding: 0;
 }
 
+.teamsocial-image:last-child {
+  margin: 0;
+}
+
 .teamsocial-image .link {
-  display: block;
+  display: flex;
   width: 44px;
   height: 44px;
   margin: 0;
-  margin-right: 10px;
-  padding: 12px;
   color: var(--icon-color);
   background-color: var(--primary-background);
   border-radius: 50%;
@@ -412,7 +418,8 @@ section {
   fill: currentColor;
 }
 
-.teamsocial-image .link:hover {
+.teamsocial-image .link:hover,
+.teamsocial-image .link:focus {
   background-color: var(--accent-color);
   color: var(--primary-background);
 }
@@ -428,7 +435,12 @@ section {
 
 .clients-image {
   margin: 0;
+  margin-right: 30px;
   padding: 0;
+}
+
+.clients-image:last-child {
+  margin: 0;
 }
 
 .clients-image .link {
@@ -436,7 +448,6 @@ section {
   width: 170px;
   height: 90px;
   margin: 0;
-  margin-right: 30px;
   padding: 0;
   color: var(--icon-color);
   border: 1px solid var(--icon-color);
@@ -450,7 +461,8 @@ section {
   fill: currentColor;
 }
 
-.clients-image .link:hover {
+.clients-image .link:hover,
+.clients-image .link:focus {
   background-color: var(--primary-background);
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
@@ -553,7 +565,8 @@ section {
   fill: currentColor;
 }
 
-.joinsocial-image .link:hover {
+.joinsocial-image .link:hover,
+.joinsocial-image .link:focus {
   background-color: var(--accent-color);
   color: var(--primary-background);
 }
@@ -627,7 +640,8 @@ section {
   border: 1px solid var(--card-background);
 }
 
-.projects .item:hover {
+.projects .link:hover,
+.projects .link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
